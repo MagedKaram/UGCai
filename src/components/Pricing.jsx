@@ -53,12 +53,12 @@ const plansData = [
 
 const Pricing = () => {
     return (
-        <section className='backdrop-blur-2xl bg-white/2 border-y border-white/10 py-10 text-center   '>
+        <section className='backdrop-blur-2xl bg-white/2 border-y border-white/10 py-10 text-center pb-20   '>
             <SectionsHeader sectionTitle="Pricing" subtitle="Simple, transparent pricing" description="Flexible agency packages designed to fit startups, growing teams and established brands." />
 
             <div className='grid md:grid-cols-3 max-w-5xl mx-auto gap-5'>
                 {
-                    plansData.map((plan) => <div key={plan.id} className={` mx-4 my-4 border border-white/6 px-6 py-5 rounded-2xl hover:-translate-y-1 transition duration-300 hover:bg-violet/8 text-left relative ${plan.popular ? "bg-violet-600/20" : "bg-violet-600/5"}`}>
+                    plansData.map((plan) => <div key={plan.id} className={` mx-4 my-4 border border-white/6 px-6 py-5 rounded-2xl hover:-translate-y-1 transition duration-300 hover:bg-violet/8 text-left relative ${plan.popular ? "bg-violet-600/20 scale-105" : "bg-violet-600/5"}`}>
                         {plan.popular &&
                             <div className='absolute -top-5 left-0 right-0 px-3 py-2 text-white flex justify-center '>
                                 <p className=' bg-violet-500 px-2 py-1 rounded-xl text-xs '>Most popular</p>

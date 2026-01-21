@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
+import Fqa from "./components/Fqa";
+import CTA from "./components/CTA.Jsx";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,6 +16,9 @@ const App = () => {
       <Home />
       <Services />
       <Pricing />
+      <Fqa />
+      <CTA />
+      <Footer />
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { footerLinks } from '../assets/dummy-data';
+import { footerLinks } from '../../pixel-io-reactjs/src/assets/dummy-data';
 import { motion } from 'framer-motion';
 
 export default function Footer() {
@@ -26,18 +26,16 @@ export default function Footer() {
                                     {section.title}
                                 </h3>
                                 <ul className="text-sm space-y-1">
-                                    {section.links.map(
-                                        (link: { name: string; url: string }, i) => (
-                                            <li key={i}>
-                                                <a
-                                                    href={link.url}
-                                                    className="hover:text-white transition"
-                                                >
-                                                    {link.name}
-                                                </a>
-                                            </li>
-                                        )
-                                    )}
+                                    {section.links.map((link, i) => (
+                                        <li key={i}>
+                                            <a
+                                                href={link.url}
+                                                className="hover:text-white transition"
+                                            >
+                                                {link.name}
+                                            </a>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         ))}
